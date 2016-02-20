@@ -31,10 +31,14 @@ def form():
 @app.route('/hello/', methods=['POST'])
 def hello():
 
-	
-	name=request.form['yourname']
-	email=request.form['youremail']
-	return render_template('form_action.html', name=name, email=email)
+	nounlist=request.form['nouns']
+	verblist=request.form['verbs']
+    adjlist=request.form['adjs']
+
+
+
+
+	return render_template('form_action.html', string=string)
 
 # Run the app :)
 if __name__ == '__main__':
