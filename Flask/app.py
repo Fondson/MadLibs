@@ -16,13 +16,23 @@ def form():
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
-    name=request.form['yourname']
-    email=request.form['youremail']
-    return render_template('form_action.html', name=name, email=email)
+	NOUN = "noun"
+	ADJECTIVE = "adjective"
+	VERB = "verb"
+
+	readFile = open("/Users/FrankMAC/Desktop/Flask/lib3.txt")
+	line = readFile.readline()
+	wordArray = line.split()
+	print(wordArray)
+
+	name=request.form['yourname']
+	email=request.form['youremail']
+	return render_template('form_action.html', name=name, email=email)
 
 # Run the app :)
 if __name__ == '__main__':
   app.run(
         host="127.0.0.1",
-        port=int("5000")
+        port=int("5000"),
+        debug=True
   )
