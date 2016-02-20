@@ -23,6 +23,16 @@ def form():
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
+<<<<<<< HEAD
+=======
+
+	readFile = open("/Users/FrankMAC/Desktop/Flask/lib3.txt")
+	line = readFile.readline()
+	stringArray = line[line.find(" "):].split()
+	userKeyWordArray = (stringArray[0][1:-1]).split(",")
+	print(stringArray)
+
+>>>>>>> origin/master
 	name=request.form['yourname']
 	email=request.form['youremail']
 	return render_template('form_action.html', name=name, email=email)
