@@ -5,7 +5,14 @@ from flask import Flask, render_template, request, url_for
 
 # Initialize the Flask application
 app = Flask(__name__)
+NOUN = "noun"
+ADJECTIVE = "adjective"
+VERB = "verb"
 
+readFile = open("lib3.txt","r")
+line = readFile.readline()
+wordArray = line.split()
+print(wordArray)
 # Define a route for the default URL, which loads the form
 @app.route('/')
 def form():
@@ -16,15 +23,6 @@ def form():
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
-	NOUN = "noun"
-	ADJECTIVE = "adjective"
-	VERB = "verb"
-
-	readFile = open("/Users/FrankMAC/Desktop/Flask/lib3.txt")
-	line = readFile.readline()
-	wordArray = line.split()
-	print(wordArray)
-
 	name=request.form['yourname']
 	email=request.form['youremail']
 	return render_template('form_action.html', name=name, email=email)
