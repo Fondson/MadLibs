@@ -9,20 +9,21 @@ NOUN = "noun"
 ADJECTIVE = "adjective"
 VERB = "verb"
 
-readFile = open("lib3.txt","r")
-line = readFile.readline()
-wordArray = line.split()
-print(wordArray)
-readFile = open("lib3.txt",'r')
-line = readFile.readline()
-stringArray = line[line.find(" "):].split()
-userKeyWordArray = (stringArray[0][1:-1]).split(",")
-print(stringArray)
+f = open("story1.txt","r")
+
+for line in f:
+    wordArray = line.split(" ")
+
+
+
 
 # Define a route for the default URL, which loads the form
 @app.route('/')
 def form():
-    return render_template('form_submit.html')
+    numnouns = wordArray[0]
+    numverbs = wordArray[1]
+    numadjectives = wordArray[2]
+    return render_template('form_submit.html', numnouns=numnouns, numverbs=numverbs, numadjectives=numadjectives)
 
 # Define a route for the action of the form, for example '/hello/'
 # We are also defining which type of requests this route is 

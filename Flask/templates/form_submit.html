@@ -10,10 +10,12 @@
             </div>
             <div id="content">
                 <form method="post" action="{{ url_for('hello') }}">
-                  <label for="yourname">Please enter your name:</label>
-                  <input type="text" name="yourname" /><br />
-                  <label for="youremail">Please enter your email:</label>
-                  <input type="text" name="youremail" /><br />
+                  <label for="nouns">Please enter {{numnouns}} nouns separated by commas.</label>
+                  <input type="text" name="nouns" /><br />
+                  <label for="verbs">Please enter {{numverbs}} verbs separated by commas.</label>
+                  <input type="text" name="verbs" /><br />
+                  <label for="adjs">Please enter {{numadjectives}} adjectives separated by commas.</label>
+                  <input type="text" name="adjectives" /><br />
                   <input type="submit" />
                 </form>
             </div>

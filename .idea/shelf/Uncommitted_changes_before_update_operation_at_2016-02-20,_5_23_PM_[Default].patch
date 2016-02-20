@@ -1,0 +1,23 @@
+Index: Flask/app.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Flask/app.py	(revision b2a1920288945fa27bad5e40dcd1a3c8a2335533)
++++ Flask/app.py	(revision )
+@@ -26,7 +26,7 @@
+ <<<<<<< HEAD
+ =======
+ 
+-	readFile = open("/Users/FrankMAC/Desktop/Flask/lib3.txt")
++    readFile = open("/Users/FrankMAC/Desktop/Flask/lib3.txt")
+ 	line = readFile.readline()
+ 	stringArray = line[line.find(" "):].split()
+ 	userKeyWordArray = (stringArray[0][1:-1]).split(",")
+@@ -43,4 +43,4 @@
+         host="127.0.0.1",
+         port=int("5000"),
+         debug=True
+-  )
++  )
+\ No newline at end of file
