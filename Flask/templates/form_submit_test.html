@@ -9,12 +9,12 @@
                 <h1>POST request with Flask</h1>
             </div>
             <div id="content">
-                <form method="post" action="{{ url_for('hello') }}">
-                  <label for="nouns">Please enter {{numnouns}} nouns separated by commas.</label>
+                <form method="post" action="{{ url_for('helloo') }}">
+                  <label for="nouns">Please enter a/an {{numnouns}}.</label>
                   <input type="text" name="nouns" /><br />
-                  <label for="verbs">Please enter {{numverbs}} verbs separated by commas.</label>
+                  <label for="verbs">Please enter a/an {{numverbs}}.</label>
                   <input type="text" name="verbs" /><br />
-                  <label for="adjs">Please enter {{numadjectives}} adjectives separated by commas.</label>
+                  <label for="adjs">Please enter a/an {{numadjectives}}</label>
                   <input type="text" name="adjs" /><br />
                   <input type="submit" />
                 </form>

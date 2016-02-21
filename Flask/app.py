@@ -8,38 +8,74 @@ app = Flask(__name__)
 NOUN = "noun"
 ADJECTIVE = "adjective"
 VERB = "verb"
-
-f = open("story1.txt","r")
-
+f = open("lib2.txt","r")
 for line in f:
-    wordArray = line.split(" ")
-
-
-
-
+	wordArray = line.split(" ")
 # Define a route for the default URL, which loads the form
 @app.route('/')
 def form():
-    numnouns = wordArray[0]
-    numverbs = wordArray[1]
-    numadjectives = wordArray[2]
-    return render_template('form_submit.html', numnouns=numnouns, numverbs=numverbs, numadjectives=numadjectives)
+	numNouns = wordArray[0]
+	numVerbs = wordArray[1]
+	numAdjectives = wordArray[2]
+
+	return render_template('form_submit.html', numnouns=numNouns, numverbs=numVerbs, numadjectives=numAdjectives)
 
 # Define a route for the action of the form, for example '/hello/'
 # We are also defining which type of requests this route is 
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
+	nounList=request.form['nouns'].split(',')
+	verbList=request.form['verbs'].split(',')
+	adjList=request.form['adjs'].split(',')
+	for i in range(len(wordArray)-3):
+		if wordArray[i+3]=='_n_':
+			wordArray[i+3]=nounList.pop()
+		elif wordArray[i+3]=='_v_':
+			wordArray[i+3]=verbList.pop()
+		elif wordArray[i+3]=='_a_':
+			wordArray[i+3]=adjList.pop()
 
-	nounlist=request.form['nouns']
-	verblist=request.form['verbs']
-    adjlist=request.form['adjs']
-
-
-
-
+	string=''
+	for i in range(3):
+		wordArray.pop(0)
+	for word in wordArray:
+		string+=word + " "
 	return render_template('form_action.html', string=string)
 
+'''libs=[]	
+@app.route('/test/')
+def formm():
+	
+	f = open("lib3.txt","r")
+	for line in f:
+		wordArray = line.split(" ")
+	
+	for i in range(len(wordArray)):
+		if (wordArray[i])[0]=='-':
+			flag=False
+			for j in range(len(libs)):
+				if wordArray[i][1:]==libs[j]:
+					flag=True
+					break
+			if not flag:
+				libs.append(wordArray[i][1:])
+	return render_template('form_submit_test.html', numnouns=libs[0], numverbs=libs[1], numadjectives=libs[2])
+
+@app.route('/helloo/', methods=['POST'])
+def helloo():
+	inputList=[request.form['nouns'],request.form['verbs'],request.form['adjs']]
+	for i in range(len(wordArray)):
+		for j in range(len(libs)):
+			if (wordArray[i])[1:]==libs[j]:
+				wordArray[i]=inputList[j]
+				break
+
+	string=''
+	for word in wordArray:
+		string+=word + " "
+	return render_template('form_action.html', string=string)
+'''
 # Run the app :)
 if __name__ == '__main__':
   app.run(
