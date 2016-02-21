@@ -26,11 +26,11 @@ def hello():
 	try:
 		for i in range(len(wordArray)-3):
 			if wordArray[i+3]=='_n_':
-				wordArray[i+3]= "-" + nounList.pop()
+				wordArray[i+3]= "-" + nounList.pop().strip()
 			elif wordArray[i+3]=='_v_':
-				wordArray[i+3]= "-" + verbList.pop()
+				wordArray[i+3]= "-" + verbList.pop().strip()
 			elif wordArray[i+3]=='_a_':
-				wordArray[i+3]= "-" + adjList.pop()
+				wordArray[i+3]= "-" + adjList.pop().strip()
 	except:
 		pass
 	string=''
