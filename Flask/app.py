@@ -44,6 +44,10 @@ def hello():
 		string+=wordArray[i+3] + " "
 	return render_template('form_action.html', string=string)
 
+@app.route('/index/')
+def index():
+	return render_template('index.html')
+
 '''libs=[]	
 @app.route('/test/')
 def formm():
