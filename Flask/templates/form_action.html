@@ -9,7 +9,7 @@
                 <!--<h1>POST request with Flask</h1>-->
             <!--</div>-->
             <div id="content">
-
+                <form action="{{ url_for('form') }}">
                 <script type="text/javascript">
                    function produceMessage(){
                         var bigString = '{{string}}';
@@ -32,6 +32,11 @@
 
                 </script>
 
+                <br>
+                <br>
+                <input type="submit" value="Reset" />
+
+                </form>
 
                 <!---->
                     <!--function writePenis(){-->

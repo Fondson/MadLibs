@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed0554f8-5c2c-46e9-bb3a-345887e6caf8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flask/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flask/jquerytest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flask/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flask/app.py" afterPath="$PROJECT_DIR$/Flask/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flask/templates/form_action.html" afterPath="$PROJECT_DIR$/Flask/templates/form_action.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flask/templates/form_submit.html" afterPath="$PROJECT_DIR$/Flask/templates/form_submit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flask/static/style.css" afterPath="$PROJECT_DIR$/Flask/static/style.css" />
@@ -36,18 +32,18 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1620">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
+              <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_action.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form_action.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Flask/templates/form_action.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.62963" vertical-offset="80" max-vertical-offset="1260">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.49586776" vertical-offset="340" max-vertical-offset="1360">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -88,18 +84,18 @@
       <file leaf-file-name="form_submit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/templates/form_submit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="522">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="522">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/static/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9505494" vertical-offset="1270" max-vertical-offset="2106">
-              <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="22" />
+            <state vertical-scroll-proportion="-8.962963" vertical-offset="1306" max-vertical-offset="2142">
+              <caret line="86" column="22" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -116,12 +112,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Flask/story1.txt" />
-        <option value="$PROJECT_DIR$/Flask/templates/form_submit.html" />
         <option value="$PROJECT_DIR$/Flask/templates/layout.html" />
-        <option value="$PROJECT_DIR$/Flask/static/style.css" />
         <option value="$PROJECT_DIR$/Flask/app.py" />
         <option value="$PROJECT_DIR$/Flask/jquerytest.py" />
         <option value="$PROJECT_DIR$/Flask/templates/index.html" />
+        <option value="$PROJECT_DIR$/Flask/templates/form_submit.html" />
+        <option value="$PROJECT_DIR$/Flask/static/style.css" />
         <option value="$PROJECT_DIR$/Flask/templates/form_action.html" />
       </list>
     </option>
@@ -474,26 +470,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/templates/form_action.html">
+    <entry file="file://$PROJECT_DIR$/Flask/jquerytest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.62963" vertical-offset="80" max-vertical-offset="1260">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1620">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1602">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/jquerytest.py">
+    <entry file="file://$PROJECT_DIR$/Flask/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="23" />
+        <state vertical-scroll-proportion="-8.962963" vertical-offset="1306" max-vertical-offset="2142">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/templates/form_submit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="234">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -508,26 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/Flask/templates/form_action.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="234">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/templates/form_submit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="522">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9505494" vertical-offset="1270" max-vertical-offset="2106">
-          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.49586776" vertical-offset="340" max-vertical-offset="1360">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding />
         </state>
       </provider>
