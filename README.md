@@ -1,3 +1,3 @@
 # McHacks
 
-#Squad
+http://noober100.pythonanywhere.com/
