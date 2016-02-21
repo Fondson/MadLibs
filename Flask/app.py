@@ -8,12 +8,13 @@ app = Flask(__name__)
 NOUN = "noun"
 ADJECTIVE = "adjective"
 VERB = "verb"
-f = open("lib2.txt","r")
-for line in f:
-	wordArray = line.split(" ")
 # Define a route for the default URL, which loads the form
 @app.route('/')
 def form():
+	global wordArray
+	f = open("lib3.txt","r")
+	for line in f:
+		wordArray = line.split(" ")
 	numNouns = wordArray[0]
 	numVerbs = wordArray[1]
 	numAdjectives = wordArray[2]
@@ -37,10 +38,8 @@ def hello():
 			wordArray[i+3]=adjList.pop()
 
 	string=''
-	for i in range(3):
-		wordArray.pop(0)
-	for word in wordArray:
-		string+=word + " "
+	for i in range(len(wordArray)-3):
+		string+=wordArray[i+3] + " "
 	return render_template('form_action.html', string=string)
 
 '''libs=[]	
