@@ -33,11 +33,11 @@ def hello():
 	adjList=request.form['adjs'].split(',')
 	for i in range(len(wordArray)-3):
 		if wordArray[i+3]=='_n_':
-			wordArray[i+3]= "-" + nounList.pop().strip()
+			wordArray[i+3]= "-" + nounList.pop()
 		elif wordArray[i+3]=='_v_':
-			wordArray[i+3]= "-" + verbList.pop().strip()
+			wordArray[i+3]= "-" + verbList.pop()
 		elif wordArray[i+3]=='_a_':
-			wordArray[i+3]= "-" + adjList.pop().strip()
+			wordArray[i+3]= "-" + adjList.pop()
 
 	string=''
 	for i in range(len(wordArray)-3):
@@ -62,7 +62,6 @@ def formm():
 			if not flag:
 				libs.append(wordArray[i][1:])
 	return render_template('form_submit_test.html', numnouns=libs[0], numverbs=libs[1], numadjectives=libs[2])
-
 @app.route('/helloo/', methods=['POST'])
 def helloo():
 	inputList=[request.form['nouns'],request.form['verbs'],request.form['adjs']]
@@ -71,7 +70,6 @@ def helloo():
 			if (wordArray[i])[1:]==libs[j]:
 				wordArray[i]=inputList[j]
 				break
-
 	string=''
 	for word in wordArray:
 		string+=word + " "
