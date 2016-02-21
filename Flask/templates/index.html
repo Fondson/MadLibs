@@ -28,133 +28,87 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted"><a href="{{ url_for('index') }}">MadLibs</a></h3>
+        <h3 class="text-muted"><a href="/Users/FrankMAC/Desktop/Flask/templates/index.html">MadLibs</a></h3>
       </div>
 
       <div class="jumbotron">
         <h1>Welcome to MadLibs</h1>
         <p class="lead">A fully functional MadLibs generator which provides entertainment for hours on end! We have adapted this lib machine to create a comprehensive platform of stories and results.</p>
-        <p><a class="btn btn-lg btn-success" href="{{ url_for('form') }}" role="button">Generate my Lib!</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://127.0.0.1:5000/" role="button">Generate my Lib!</a></p>
       </div>
 
-      <div class="row marketing">
-        <div class="col-lg-3">
-          <h4>12 Most Common Nouns:</h4>
-          <div class="row">
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Noun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>time</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>year</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>people</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="well">
+          <h4>Random Word of The Day</h4>
+          <p><b>hypolimnion</b> - The layer of water in a thermally stratified lake that lies below the thermocline, is noncirculating, and remains perpetually cold.</p>
         </div>
-        <div class="col-md-3">
-          <table class="table">
+
+          <div  class="page-header">
+          <h4>Most Common Words:</h4>
+          </div>
+          <center>
+          <div class="row">
+            <div class="col-md-4">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Nouns</th>
+                  </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>time</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>year</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>people</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>way</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>day</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>man</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>thing</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>women</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>life</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>child</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        <div class="col-md-4">
+          <table class="table table-striped">
             <thead>
               <tr>
               </th>
                 <th>#</th>
-                <th>Noun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>4</td>
-                <td>way</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>day</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>man</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Noun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>7</td>
-                <td>thing</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>woman</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>life</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Noun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10</td>
-                <td>life</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>world</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>school</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-
-        <div class="col-lg-6">
-          <h4>12 Most Common Adjectives</h4>
-          <div class="row">
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Adjective</th>
+                <th>Adjectives</th>
               </tr>
             </thead>
             <tbody>
@@ -170,18 +124,6 @@
                 <td>3</td>
                 <td>good</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Adjective</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>4</td>
                 <td>high</td>
@@ -194,19 +136,6 @@
                 <td>6</td>
                 <td>great</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Adjective</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>7</td>
                 <td>big</td>
@@ -219,44 +148,21 @@
                 <td>9</td>
                 <td>small</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Adjective</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>10</td>
                 <td>large</td>
               </tr>
-              <tr>
-                <td>11</td>
-                <td>national</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>young</td>
-              </tr>
             </tbody>
           </table>
         </div>
 
-          <div class="col-lg-6">
-          <h4>12 Most Common Verbs</h4>
-          <div class="row">
-        <div class="col-md-3">
-          <table class="table">
+        <div class="col-md-4">
+          <table class="table table-striped">
             <thead>
               <tr>
+              </th>
                 <th>#</th>
-                <th>Verb</th>
+                <th>Verbs</th>
               </tr>
             </thead>
             <tbody>
@@ -272,93 +178,42 @@
                 <td>3</td>
                 <td>do</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Verb</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>4</td>
                 <td>say</td>
               </tr>
-              <tr>
+               <tr>
                 <td>5</td>
                 <td>get</td>
               </tr>
-              <tr>
+               <tr>
                 <td>6</td>
                 <td>make</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Verb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+               <tr>
                 <td>7</td>
                 <td>go</td>
               </tr>
-              <tr>
+               <tr>
                 <td>8</td>
                 <td>know</td>
               </tr>
-              <tr>
+               <tr>
                 <td>9</td>
                 <td>take</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-3">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Verb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+               <tr>
                 <td>10</td>
                 <td>see</td>
               </tr>
-              <tr>
-                <td>11</td>
-                <td>come</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>think</td>
-              </tr>
             </tbody>
           </table>
+          </center>
         </div>
-          <h4>Random Word of The Day</h4>
-          <p><b>hypolimnion</b> - The layer of water in a thermally stratified lake that lies below the thermocline, is noncirculating, and remains perpetually cold.</p>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <p>&copy; 2016 Fondson is cool, Inc.</p>
-      </footer>
-
     </div> <!-- /container -->
+          <footer class="footer">
+        <p>&copy; 2016 Henry He, Frank Dong, Fondson Tran</p>
+      </footer>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

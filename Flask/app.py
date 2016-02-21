@@ -12,33 +12,6 @@ VERB = "verb"
 
 # Define a route for the default URL, which loads the form
 @app.route('/')
-def index():
-	return render_template('index.html')
-
-# Define a route for the action of the form, for example '/hello/'
-# We are also defining which type of requests this route is 
-# accepting: POST requests in this case
-@app.route('/hello/', methods=['POST'])
-def hello():
-	nounList=request.form['nouns'].split(',')
-	verbList=request.form['verbs'].split(',')
-	adjList=request.form['adjs'].split(',')
-	try:
-		for i in range(len(wordArray)-3):
-			if wordArray[i+3]=='_n_':
-				wordArray[i+3]= "-" + nounList.pop()
-			elif wordArray[i+3]=='_v_':
-				wordArray[i+3]= "-" + verbList.pop()
-			elif wordArray[i+3]=='_a_':
-				wordArray[i+3]= "-" + adjList.pop()
-	except:
-		pass
-	string=''
-	for i in range(len(wordArray)-3):
-		string+=wordArray[i+3] + " "
-	return render_template('form_action.html', string=string)
-
-@app.route('/input/')
 def form():
 	global wordArray
 	f = open("lib" + str(randint(1,3))+".txt","r")
@@ -49,6 +22,27 @@ def form():
 	numAdjectives = wordArray[2]
 
 	return render_template('form_submit.html', numNouns=numNouns, numVerbs=numVerbs, numAdjectives=numAdjectives)
+
+# Define a route for the action of the form, for example '/hello/'
+# We are also defining which type of requests this route is 
+# accepting: POST requests in this case
+@app.route('/hello/', methods=['POST'])
+def hello():
+	nounList=request.form['nouns'].split(',')
+	verbList=request.form['verbs'].split(',')
+	adjList=request.form['adjs'].split(',')
+	for i in range(len(wordArray)-3):
+		if wordArray[i+3]=='_n_':
+			wordArray[i+3]= "-" + nounList.pop()
+		elif wordArray[i+3]=='_v_':
+			wordArray[i+3]= "-" + verbList.pop()
+		elif wordArray[i+3]=='_a_':
+			wordArray[i+3]= "-" + adjList.pop()
+
+	string=''
+	for i in range(len(wordArray)-3):
+		string+=wordArray[i+3] + " "
+	return render_template('form_action.html', string=string)
 
 '''libs=[]	
 @app.route('/test/')
