@@ -1,15 +1,57 @@
  <html>
     <head>
-        <title>Handle POST requests with Flask</title>
+        <!--<title>Handle POST requests with Flask</title>-->
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <div id="container">
-            <div class="title">
-                <h1>POST request with Flask</h1>
-            </div>
+            <!--<div class="title">-->
+                <!--<h1>POST request with Flask</h1>-->
+            <!--</div>-->
             <div id="content">
-                {{string}}
+
+                <script type="text/javascript">
+                   function produceMessage(){
+                        var bigString = '{{string}}';
+                        var stringArray = bigString.split(" ");
+                        var finalString = "";
+                        var boldWord = "";
+                        for (i = 0; i < stringArray.length; i++) {
+                            if (stringArray[i].charAt(0) === "-"){
+                                boldWord = stringArray[i].replace("-", "");
+                                finalString += boldWord.bold() + " ";
+                            }
+                            else{
+                                finalString += stringArray[i] + " ";
+                            }
+                        }
+                        return finalString;
+                    }
+                    document.write(produceMessage())
+
+
+                </script>
+
+
+                <!---->
+                    <!--function writePenis(){-->
+                        <!--var word;-->
+
+                        <!--for (i=0; i<10; i++){-->
+                            <!--if (i%2 == 0){-->
+                                <!--word += i.toString().bold();-->
+                            <!--}-->
+                        <!--}-->
+
+                        <!--return word;-->
+                    <!--}-->
+
+                    <!--document.write(writePenis())-->
+
+
+
+
+
             </div>
     </body>
 </html>

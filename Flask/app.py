@@ -19,23 +19,23 @@ def form():
 	numVerbs = wordArray[1]
 	numAdjectives = wordArray[2]
 
-	return render_template('form_submit.html', numnouns=numNouns, numverbs=numVerbs, numadjectives=numAdjectives)
+	return render_template('form_submit.html', numNouns=numNouns, numVerbs=numVerbs, numAdjectives=numAdjectives)
 
 # Define a route for the action of the form, for example '/hello/'
 # We are also defining which type of requests this route is 
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
-	nounList=request.form['nouns'].split(',')
-	verbList=request.form['verbs'].split(',')
-	adjList=request.form['adjs'].split(',')
+	nounList=request.form['nouns'].split(' ')
+	verbList=request.form['verbs'].split(' ')
+	adjList=request.form['adjs'].split(' ')
 	for i in range(len(wordArray)-3):
 		if wordArray[i+3]=='_n_':
-			wordArray[i+3]=nounList.pop()
+			wordArray[i+3]= "-" + nounList.pop().strip(",.!/;:\"")
 		elif wordArray[i+3]=='_v_':
-			wordArray[i+3]=verbList.pop()
+			wordArray[i+3]= "-" + verbList.pop().strip(",.!/;:\"")
 		elif wordArray[i+3]=='_a_':
-			wordArray[i+3]=adjList.pop()
+			wordArray[i+3]= "-" + adjList.pop().strip(",.!/;:\"")
 
 	string=''
 	for i in range(len(wordArray)-3):

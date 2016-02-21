@@ -103,4 +103,10 @@ form input[type=submit]{
     border: 0;
     cursor: pointer;
     text-align: center;
-} 
+}
+
+.result{
+    font-size: 200px;
+    font-weight: bold;
+
+}
