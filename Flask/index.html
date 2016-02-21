@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="MadLibs Generator!">
+    <meta name="author" content="Henry He, Fondson Tran, Frank Dong">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MadLibs!</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"><a href="/Users/FrankMAC/Desktop/Flask/templates/index.html">MadLibs</a></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Welcome to MadLibs</h1>
+        <p class="lead">A fully functional MadLibs generator which provides entertainment for hours on end! We have adapted this lib machine to create a comprehensive platform of stories and results.</p>
+        <p><a class="btn btn-lg btn-success" href="http://127.0.0.1:5000/" role="button">Generate my Lib!</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-3">
+          <h4>12 Most Common Nouns:</h4>
+          <div class="row">
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Noun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>time</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>year</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>people</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+              </th>
+                <th>#</th>
+                <th>Noun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>way</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>day</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>man</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Noun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7</td>
+                <td>thing</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>woman</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>life</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Noun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>life</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>world</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>school</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="col-lg-6">
+          <h4>12 Most Common Adjectives</h4>
+          <div class="row">
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Adjective</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>other</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>new</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>good</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Adjective</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>high</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>old</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>great</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Adjective</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7</td>
+                <td>big</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>American</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>small</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Adjective</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>large</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>national</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>young</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+          <div class="col-lg-6">
+          <h4>12 Most Common Verbs</h4>
+          <div class="row">
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Verb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>be</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>have</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>do</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Verb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td>say</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>get</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>make</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Verb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7</td>
+                <td>go</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>know</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>take</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Verb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>see</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>come</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>think</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <h4>Random Word of The Day</h4>
+          <p><b>hypolimnion</b> - The layer of water in a thermally stratified lake that lies below the thermocline, is noncirculating, and remains perpetually cold.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016 Fondson is cool, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/Users/FrankMAC/Desktop/MadLibs/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
