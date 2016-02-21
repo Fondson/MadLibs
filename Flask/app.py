@@ -2,17 +2,19 @@
 # and render_template, to render our templates (form and response)
 # we'll use url_for to get some URLs for the app on the templates
 from flask import Flask, render_template, request, url_for
+from random import randint
 
 # Initialize the Flask application
 app = Flask(__name__)
 NOUN = "noun"
 ADJECTIVE = "adjective"
 VERB = "verb"
+
 # Define a route for the default URL, which loads the form
 @app.route('/')
 def form():
 	global wordArray
-	f = open("lib3.txt","r")
+	f = open("lib" + str(randint(1,3))+".txt","r")
 	for line in f:
 		wordArray = line.split(" ")
 	numNouns = wordArray[0]
@@ -26,16 +28,16 @@ def form():
 # accepting: POST requests in this case
 @app.route('/hello/', methods=['POST'])
 def hello():
-	nounList=request.form['nouns'].split(' ')
-	verbList=request.form['verbs'].split(' ')
-	adjList=request.form['adjs'].split(' ')
+	nounList=request.form['nouns'].split(',')
+	verbList=request.form['verbs'].split(',')
+	adjList=request.form['adjs'].split(',')
 	for i in range(len(wordArray)-3):
 		if wordArray[i+3]=='_n_':
-			wordArray[i+3]= "-" + nounList.pop().strip(",.!/;:\"")
+			wordArray[i+3]= "-" + nounList.pop()
 		elif wordArray[i+3]=='_v_':
-			wordArray[i+3]= "-" + verbList.pop().strip(",.!/;:\"")
+			wordArray[i+3]= "-" + verbList.pop()
 		elif wordArray[i+3]=='_a_':
-			wordArray[i+3]= "-" + adjList.pop().strip(",.!/;:\"")
+			wordArray[i+3]= "-" + adjList.pop()
 
 	string=''
 	for i in range(len(wordArray)-3):
