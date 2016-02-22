@@ -5,6 +5,6 @@ Built for McHacks 2016, MadLibs is a web application, created using the Flask we
 <a href="http://noober100.pythonanywhere.com/"> View the site online</a>
 
 # Screenshots
-<img src="http://puu.sh/nhiOg/fb13bd65f3.png" width="420px" height="270px"/>
+<img src="http://puu.sh/nhiOg/fb13bd65f3.png" width="521px" height="376px"/>
 
 
