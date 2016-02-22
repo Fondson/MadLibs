@@ -8,7 +8,7 @@ Built for McHacks 2016, MadLibs is a web application, created using the Flask we
 
 <b>Homepage:</b>
 
-<img src="http://puu.sh/nhiOg/fb13bd65f3.png" width="695px" height="501px"/>
+<img src="http://puu.sh/nhiOg/fb13bd65f3.png" />
 
 <b>Lib Input Page:</b>
 
