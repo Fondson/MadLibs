@@ -39,16 +39,23 @@
                         var bigString = '{{string}}';
                         var stringArray = bigString.split(" ");
                         var finalString = "";
-                        var boldWord = "";
+                        var speechString = "";
+
                         for (i = 0; i < stringArray.length; i++) {
                             if (stringArray[i].charAt(0) === "-"){
                                 boldWord = stringArray[i].replace("-", "");
+                                speechString += stringArray[i].replace("-", "");
                                 finalString += boldWord.bold() + " ";
                             }
                             else{
                                 finalString += stringArray[i] + " ";
+                                speechString += stringArray[i] + " ";
                             }
                         }
+
+
+                        var msg = new SpeechSynthesisUtterance(speechString);
+                        window.speechSynthesis.speak(msg);
                         return finalString;
                     }
                     document.write(produceMessage())

@@ -41,7 +41,7 @@ def hello():
 @app.route('/input/')
 def form():
 	global wordArray
-	f = open("lib" + str(randint(1,3))+".txt","r")
+	f = open("lib" + str(randint(1,5))+".txt","r")
 	for line in f:
 		wordArray = line.split(" ")
 	numNouns = wordArray[0]
